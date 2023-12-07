@@ -1,0 +1,63 @@
+</div>
+  <table border="1"
+  <!--Table Headers-->
+  <thead>
+    <tr>
+      <th> Benefits</th>
+      <th> Problems</th>
+      <th> Solutions</th>
+    </tr>
+  </thead>
+   <!--Table Body -->
+  <tbody>
+   <tr>
+     <td> EV's help reduce carbon emissions</td>
+     <td> The mining and processing of metals such as lithium, copper, and nickel requires significant energy and can release toxic compounds </td>
+     <td> Improving electrical passthrough with a silver bond. </td>
+   </tr>
+  <tr>
+        <td>Easy to maintain</td>
+        <td>The magnets found in permanent magnet motors used in electric vehicles contain rare-earth metals to increase the power output of these motors</td>
+        <td>Staying cool with new materials.</td>
+      </tr>
+      <t/r>
+        <td>Easy to drive</td>
+        <td>They are expensive and cost lots of money to maintain and not the average human could afford </td>
+        <td>Adding protection for improved efficiency</td>
+      </tr>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+const xValues = ["Gas Powered", "Bikes/Motorcycles", "Trucks", "Busses", "Electric Vehicles"];
+const yValues = [55, 49, 44, 24, 15];
+const barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Other Vehicle comparisons to EV's"
+    }
+  }
+});
+</script>
+
+</body>
+</html>
